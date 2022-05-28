@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logged in User</title>
+</head>
+<body>
+    <div class="text-center">
+    <h1>welcome {{request.user}} </h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque est qui porro. Esse, aliquam ut totam eaque nobis est commodi impedit ab saepe dolorem quas distinctio illum cupiditate at repudiandae. Iusto veniam saepe assumenda, consequuntur voluptatum accusamus eveniet. Tenetur vitae quod a debitis voluptas. In.</p>
+    <a href="/logout" class="btn btn-danger">Logout </a>
+
+    <button class="w-100 btn btn-lg btn-primary" type="submit">
+        <a href="{% url 'login'%}">Login here</a> 
+      </button>
+</div>
+</body>
+</html>
